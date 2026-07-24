@@ -96,8 +96,8 @@ func handleClear(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", helloHandler)
-	http.HandleFunc("/dog", handleClear)
-	http.HandleFunc("/clear", handlePost)
+	http.HandleFunc("/dog", handlePost)
+	http.HandleFunc("/clear", handleClear)
 
 	fmt.Println("Starting server at port :8080")
 	
